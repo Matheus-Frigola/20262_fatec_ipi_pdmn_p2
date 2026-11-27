@@ -47,22 +47,6 @@ app.get('/em-alta', async (req, res) => {
   }
 })
 
-app.get('/filmes', async (req, res) => {
-  const busca = req.query.busca
-  if (typeof busca !== 'string' || !busca.trim()) {
-    return res.status(400).json({ mensagem: 'Informe o título de um filme.' })
-  }
-  const termo = busca.trim()
-  console.log(`Busca: ${termo}`)
-  try {
-    const resultado = await tmdbClient.get('/search/movie', {
-      params: { query: termo, include_adult: false }
-    })
-    res.json(resultado.data.results.map(simplificarFilme))
-  } catch (e) {
-    erro502(res, e)
-  }
-})
 
 const port = 3000
 app.listen(port, () => console.log(`Backend do OndePassa no ar. Porta: ${port}.`))
