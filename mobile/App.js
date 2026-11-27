@@ -4,6 +4,7 @@ import { StyleSheet, Text } from 'react-native'
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
 import Cabecalho from './src/components/Cabecalho'
 import Creditos from './src/components/Creditos'
+import backendClient from './src/utils/backendClient'
 
 export default function App() {
   const [emAlta, setEmAlta] = useState([])
