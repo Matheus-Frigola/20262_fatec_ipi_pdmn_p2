@@ -5,6 +5,7 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
 import Cabecalho from './src/components/Cabecalho'
 import Creditos from './src/components/Creditos'
 import Busca from './src/components/Busca'
+import DetalhesFilme from './src/components/DetalhesFilme'
 import backendClient from './src/utils/backendClient'
 
 export default function App() {
