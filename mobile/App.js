@@ -4,7 +4,7 @@ import { StyleSheet, Text } from 'react-native'
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
 import Cabecalho from './src/components/Cabecalho'
 import Creditos from './src/components/Creditos'
-
+import Carregando from './src/components/Carregando'
 import ListaFilmes from './src/components/ListaFilmes'
 import Busca from './src/components/Busca'
 import DetalhesFilme from './src/components/DetalhesFilme'
